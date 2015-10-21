@@ -1,0 +1,23 @@
+{
+  "name": "goreact",
+  "version": "0.0.0",
+  "description": "go with react js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Dan-Dongcheol-Lee/goreact.git"
+  },
+  "keywords": [
+    "go",
+    "gin",
+    "reactjs"
+  ],
+  "author": "Dan Dongcheol Lee",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/Dan-Dongcheol-Lee/goreact/issues"
+  }
+}

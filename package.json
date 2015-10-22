@@ -19,5 +19,18 @@
   "license": "Apache 2",
   "bugs": {
     "url": "https://github.com/Dan-Dongcheol-Lee/goreact/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-inject": "~3.0.0",
+    "main-bower-files": "~2.9.0",
+    "gulp-stylus": "~2.1.0",
+    "gulp-main-bower-files": "~1.2.3",
+    "gulp-bower-files": "~0.2.7",
+    "del": "~2.0.2",
+    "wrappy": "~1.0.1",
+    "gulp-bower-src": "~0.1.0",
+    "gulp-filter": "~3.0.1",
+    "gulp-babel": "~5.3.0"
   }
 }

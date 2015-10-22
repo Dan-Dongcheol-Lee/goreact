@@ -1,0 +1,31 @@
+{
+  "name": "goreact",
+  "description": "go with react js",
+  "main": "index.js",
+  "authors": [
+    "Dan Dongcheol Lee"
+  ],
+  "license": "Apache 2",
+  "keywords": [
+    "go",
+    "gin",
+    "reactjs"
+  ],
+  "homepage": "https://github.com/Dan-Dongcheol-Lee/goreact",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.14.0",
+    "jquery": "~2.1.4",
+    "browser": "browser#~1.0.0",
+    "react-dom": "~0.1.0",
+    "bowser": "browser#~1.0.0"
+  }
+}

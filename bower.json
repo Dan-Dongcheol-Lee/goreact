@@ -22,10 +22,7 @@
     "tests"
   ],
   "dependencies": {
-    "react": "~0.14.0",
     "jquery": "~2.1.4",
-    "browser": "browser#~1.0.0",
-    "react-dom": "~0.1.0",
-    "bowser": "browser#~1.0.0"
+    "bootstrap": "~3.3.5"
   }
 }

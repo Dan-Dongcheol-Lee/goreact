@@ -1,7 +1,7 @@
 "use strict";
 
-var MsgList = React.createClass({
-    render: () => {
+export default class MsgList extends React.Component {
+    render() {
         return (
             <div className="container-fluid">
                 <table className="table">
@@ -21,5 +21,4 @@ var MsgList = React.createClass({
             </div>
         );
     }
-});
-
+}

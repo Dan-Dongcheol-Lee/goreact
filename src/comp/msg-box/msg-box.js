@@ -1,7 +1,7 @@
 "use strict";
 
-var MsgBox = React.createClass({
-    render: () => {
+export default class MsgBox extends React.Component {
+    render() {
         return (
             <div className="container-fluid">
                 <form className="form-inline">
@@ -18,5 +18,5 @@ var MsgBox = React.createClass({
             </div>
         );
     }
-});
+}
 

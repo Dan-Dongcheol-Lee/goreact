@@ -1,7 +1,11 @@
 "use strict";
 
-var MsgContainer = React.createClass({
-    render: () => {
+import React from 'react';
+import MsgBox from '../msg-box/msg-box';
+import MsgList from '../msg-list/msg-list';
+
+export default class MsgContainer extends React.Component {
+    render() {
         return (
             <div className="container-fluid">
                 <div className="row">
@@ -13,9 +17,4 @@ var MsgContainer = React.createClass({
             </div>
         );
     }
-});
-
-ReactDOM.render(
-  <MsgContainer />,
-  document.getElementById('content')
-);
+};

@@ -4,7 +4,7 @@ import React from 'react';
 import MsgBox from '../msg-box/msg-box';
 import MsgList from '../msg-list/msg-list';
 
-export default class MsgContainer extends React.Component {
+class MsgContainer extends React.Component {
     render() {
         return (
             <div className="container-fluid">
@@ -18,3 +18,5 @@ export default class MsgContainer extends React.Component {
         );
     }
 };
+
+export default MsgContainer

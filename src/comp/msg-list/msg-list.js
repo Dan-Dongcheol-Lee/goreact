@@ -1,6 +1,10 @@
 "use strict";
 
-export default class MsgList extends React.Component {
+class MsgList extends React.Component {
+    constructor() {
+        super();
+        this.state = {};
+    }
     render() {
         return (
             <div className="container-fluid">
@@ -22,3 +26,5 @@ export default class MsgList extends React.Component {
         );
     }
 }
+
+export default MsgList;

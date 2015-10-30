@@ -1,8 +1,8 @@
 "use strict";
 
 import React from 'react';
-import MsgBox from '../msg-box/msg-box';
-import MsgList from '../msg-list/msg-list';
+import MsgBox from './msg-box';
+import MsgList from './msg-list';
 
 class MsgContainer extends React.Component {
     render() {

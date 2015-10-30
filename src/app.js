@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import MsgContainer from './comp/msg-container/msg-container';
+import MsgContainer from './components/msg-container';
 
 ReactDOM.render(
   <MsgContainer />,

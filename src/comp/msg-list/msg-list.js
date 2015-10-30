@@ -1,5 +1,7 @@
 "use strict";
 
+import React from 'react';
+
 class MsgList extends React.Component {
     constructor() {
         super();

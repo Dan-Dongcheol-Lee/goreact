@@ -17,6 +17,6 @@ class MsgContainer extends React.Component {
             </div>
         );
     }
-};
+}
 
 export default MsgContainer

@@ -1,4 +1,4 @@
-package main
+package goreact
 
 import (
 	"github.com/gin-gonic/gin"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func init() {
 
 	type Message struct {
 		Writer string `json:"writer"`
@@ -14,7 +14,7 @@ func main() {
 		CreatedDate time.Time `json:"createdDate"`
 	}
 
-	msgs := []Message {
+	var msgs = []Message {
 		{ Writer: "Dan", Message: "Message 1", CreatedDate: time.Now() },
 		{ Writer: "Fullbox", Message: "Message 2", CreatedDate: time.Now() },
 	}
@@ -38,5 +38,5 @@ func main() {
 
 	router.Static("/web", "./web")
 
-	router.Run(":9080")
+	http.Handle("/", router)
 }

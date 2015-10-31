@@ -1,6 +1,7 @@
 "use strict";
 
 import React from 'react';
+import MessageActions from '../actions/MessageActions';
 
 class MsgBox extends React.Component {
     constructor() {
@@ -18,7 +19,7 @@ class MsgBox extends React.Component {
     }
     submitMessage(event) {
         console.log('submitMessage writer:' + this.state.writer + ', message: ' + this.state.message);
-        console.log('event', event);
+        MessageActions.addMessage(this.state);
     }
     render() {
         let writerValue = {value: this.state.writer, requestChange: this.handleWriter};

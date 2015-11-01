@@ -1,15 +1,16 @@
 # go with reactjs simple web apps for spike
 
-* tech stack for this spike is;
-** reactjs with flux in es6
-** gin-gonic for RESTful apis
+* The tech stack for this is;
+ - reactjs with flux in es6
+ - gin-gonic for RESTful apis
+ - Runs on google app engine
 
-* This app runs on google app engine.
-
-* build webapp first using gulp.
-** /> gulp
-
+* build webapp first by gulp.
+```
+/goreact> gulp
+```
 * run the command 'goapp serve' in goreact directory.
-** /goreact/> goapp serve
-
+```
+/goreact/> goapp serve
+```
 

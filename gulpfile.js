@@ -16,7 +16,6 @@ gulp.task('build', function () {
   var testFiles = glob.sync('./src/**/*.js');
   return browserify({
     entries: testFiles,
-    extensions: ['.js'],
     debug: true
   })
   .transform(babelify)

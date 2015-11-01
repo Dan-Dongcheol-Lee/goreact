@@ -1,4 +1,5 @@
 import AppDispatcher from '../dispatchers/AppDispatcher';
+import MessageConstants from '../constants/MessageConstants';
 import {EventEmitter} from 'events';
 
 let CHANGE_EVENT = 'change';
@@ -36,11 +37,12 @@ let _messageStore = new MessageStore();
 _messageStore.dispatchToken = AppDispatcher.register(payload => {
 
   switch(payload.actionType) {
-    case 'MESSAGE_ADDED':
+    case MessageConstants.MESSAGE_ADDED:
+    case MessageConstants.MESSAGE_FETCHED:
       setMessages(payload.messages);
       _messageStore.emitChange();
     default:
-      return;
+      break;
   }
 
 });

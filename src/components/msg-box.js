@@ -18,7 +18,6 @@ class MsgBox extends React.Component {
         this.setState({message: newValue});
     }
     submitMessage(event) {
-        console.log('submitMessage writer:' + this.state.writer + ', message: ' + this.state.message);
         MessageActions.addMessage(this.state);
     }
     render() {
@@ -38,7 +37,7 @@ class MsgBox extends React.Component {
                     <input type="text" className="form-control" id="message" placeholder="Message"
                         valueLink={messageValue}/>
                   </div>
-                  <button type="button" className="btn btn-default" onClick={this.submitMessage}>Send1</button>
+                  <button type="button" className="btn btn-default btn-primary" onClick={this.submitMessage}>Send</button>
                 </form>
             </div>
         );
@@ -46,4 +45,3 @@ class MsgBox extends React.Component {
 }
 
 export default MsgBox;
-

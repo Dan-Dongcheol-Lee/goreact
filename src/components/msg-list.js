@@ -2,6 +2,7 @@
 
 import React from 'react';
 import MessageStore from '../stores/MessageStore';
+import MessageActions from '../actions/MessageActions';
 
 
 function getMessages() {
@@ -15,21 +16,18 @@ class MsgList extends React.Component {
     constructor() {
         super();
         this.state = getMessages();
+        this._onChange = this._onChange.bind(this);
     }
-
     componentDidMount() {
         MessageStore.addChangeListener(this._onChange);
+        MessageActions.getMessages();
     }
-
     componentWillUnmount() {
         MessageStore.removeChangeListener(this._onChange);
     }
-
     _onChange() {
-        this.state = getMessages();
-        console.log(this.state);
+        this.setState(getMessages());
     }
-
     render() {
         return (
             <div className="container-fluid">
@@ -38,14 +36,18 @@ class MsgList extends React.Component {
                         <tr>
                             <th>Writer</th>
                             <th>Message</th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
                     {this.state.messages.map(function (msg, i) {
-                        return (<tr key={i}>
-                            <td>{msg.writer}</td>
-                            <td>{msg.message}</td>
-                        </tr>)
+                        return (
+                            <tr key={i}>
+                                <td>{msg.writer}</td>
+                                <td>{msg.message}</td>
+                                <td>{msg.createdDate}</td>
+                            </tr>
+                            );
                     })}
                     </tbody>
                 </table>

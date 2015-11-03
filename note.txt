@@ -1,3 +1,0 @@
-
-* There are some questions to ask
-* How to debug reactjs in development if gulp build with browerify and babelify?
